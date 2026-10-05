@@ -1,0 +1,62 @@
+[2026-10-05 14:53:59.744] [DEBUG] [main] Cache PUT: [multi.com A -> 1.1.1.1] (TTL: 300s)
+[2026-10-05 14:53:59.748] [DEBUG] [main] Cache PUT: [multi.com A -> 1.0.0.1] (TTL: 300s)
+[2026-10-05 14:53:59.749] [INFO ] [main] Cache HIT for 'multi.com' (Type: A) -> 2 record(s) returned
+[2026-10-05 14:53:59.811] [DEBUG] [main] Cache PUT: [site1.com A -> 1.1.1.1] (TTL: 300s)
+[2026-10-05 14:53:59.811] [DEBUG] [main] Cache PUT: [site2.com A -> 2.2.2.2] (TTL: 300s)
+[2026-10-05 14:53:59.812] [INFO ] [main] Cache cleared. Removed 2 active record(s).
+[2026-10-05 14:53:59.818] [DEBUG] [main] Cache PUT: [example.com A -> 93.184.216.34] (TTL: 300s)
+[2026-10-05 14:53:59.819] [INFO ] [main] Cache HIT for 'example.com' (Type: A) -> 1 record(s) returned
+[2026-10-05 14:53:59.831] [DEBUG] [main] Cache PUT: [old.com A -> 1.2.3.4] (TTL: 5s)
+[2026-10-05 14:53:59.832] [DEBUG] [main] Cache PUT: [fresh.com A -> 5.6.7.8] (TTL: 300s)
+[2026-10-05 14:53:59.832] [INFO ] [main] Cache eviction sweep: purged 1 expired record(s). Cumulative expired: 1
+[2026-10-05 14:53:59.833] [INFO ] [main] Cache HIT for 'fresh.com' (Type: A) -> 1 record(s) returned
+[2026-10-05 14:53:59.835] [INFO ] [main] Cache MISS for 'unknown-domain.org' (Type: A)
+[2026-10-05 14:53:59.847] [DEBUG] [main] Cache PUT: [fast-expire.com A -> 10.0.0.1] (TTL: 1s)
+[2026-10-05 14:53:59.847] [INFO ] [main] Cache HIT for 'fast-expire.com' (Type: A) -> 1 record(s) returned
+[2026-10-05 14:54:01.049] [INFO ] [main] Expired 1 entries during query for 'fast-expire.com'. Total expired: 1
+[2026-10-05 14:54:01.050] [INFO ] [main] Cache MISS (all entries expired) for 'fast-expire.com' (Type: A)
+[2026-10-05 14:54:01.057] [DEBUG] [main] Cache PUT: [google.com A -> 142.250.190.46] (TTL: 300s)
+[2026-10-05 14:54:01.060] [INFO ] [main] Cache HIT for 'google.com' (Type: A) -> 1 record(s) returned
+[2026-10-05 14:54:01.061] [INFO ] [main] Cache HIT for 'google.com' (Type: A) -> 1 record(s) returned
+[2026-10-05 14:54:01.061] [INFO ] [main] Cache HIT for 'google.com' (Type: A) -> 1 record(s) returned
+[2026-10-05 14:54:01.062] [INFO ] [main] Cache MISS for 'missing.com' (Type: A)
+[2026-10-05 14:54:01.331] [INFO ] [main] DnsServer STARTED on UDP port 62782 (Upstream: 1.1.1.1:53)
+[2026-10-05 14:54:01.333] [DEBUG] [main] Cache PUT: [localtest.org A -> 192.168.1.100] (TTL: 300s)
+[2026-10-05 14:54:01.340] [INFO ] [main] Sending UDP query for 'localtest.org' (A) to 127.0.0.1:62782
+[2026-10-05 14:54:01.347] [INFO ] [DnsWorker] DnsServer received query for 'localtest.org' (A) from /127.0.0.1:62783
+[2026-10-05 14:54:01.347] [INFO ] [DnsWorker] Cache HIT for 'localtest.org' (Type: A) -> 1 record(s) returned
+[2026-10-05 14:54:01.347] [INFO ] [DnsWorker] DnsServer responding from CACHE for 'localtest.org' (A)
+[2026-10-05 14:54:01.348] [DEBUG] [main] Cache PUT: [localtest.org A -> 192.168.1.100] (TTL: 300s)
+[2026-10-05 14:54:01.351] [INFO ] [main] DNS query completed via UDP: 'localtest.org' (A) in 7.66 ms -> 1 answer(s) [NOERROR (Success)]
+[2026-10-05 14:54:01.354] [INFO ] [main] DnsServer STOPPED on UDP port 62782
+[2026-10-05 14:57:56.833] [DEBUG] [main] Cache PUT: [multi.com A -> 1.1.1.1] (TTL: 300s)
+[2026-10-05 14:57:56.835] [DEBUG] [main] Cache PUT: [multi.com A -> 1.0.0.1] (TTL: 300s)
+[2026-10-05 14:57:56.835] [INFO ] [main] Cache HIT for 'multi.com' (Type: A) -> 2 record(s) returned
+[2026-10-05 14:57:56.854] [DEBUG] [main] Cache PUT: [site1.com A -> 1.1.1.1] (TTL: 300s)
+[2026-10-05 14:57:56.854] [DEBUG] [main] Cache PUT: [site2.com A -> 2.2.2.2] (TTL: 300s)
+[2026-10-05 14:57:56.854] [INFO ] [main] Cache cleared. Removed 2 active record(s).
+[2026-10-05 14:57:56.859] [DEBUG] [main] Cache PUT: [example.com A -> 93.184.216.34] (TTL: 300s)
+[2026-10-05 14:57:56.860] [INFO ] [main] Cache HIT for 'example.com' (Type: A) -> 1 record(s) returned
+[2026-10-05 14:57:56.864] [DEBUG] [main] Cache PUT: [old.com A -> 1.2.3.4] (TTL: 5s)
+[2026-10-05 14:57:56.864] [DEBUG] [main] Cache PUT: [fresh.com A -> 5.6.7.8] (TTL: 300s)
+[2026-10-05 14:57:56.865] [INFO ] [main] Cache eviction sweep: purged 1 expired record(s). Cumulative expired: 1
+[2026-10-05 14:57:56.865] [INFO ] [main] Cache HIT for 'fresh.com' (Type: A) -> 1 record(s) returned
+[2026-10-05 14:57:56.867] [INFO ] [main] Cache MISS for 'unknown-domain.org' (Type: A)
+[2026-10-05 14:57:56.869] [DEBUG] [main] Cache PUT: [fast-expire.com A -> 10.0.0.1] (TTL: 1s)
+[2026-10-05 14:57:56.869] [INFO ] [main] Cache HIT for 'fast-expire.com' (Type: A) -> 1 record(s) returned
+[2026-10-05 14:57:58.084] [INFO ] [main] Expired 1 entries during query for 'fast-expire.com'. Total expired: 1
+[2026-10-05 14:57:58.084] [INFO ] [main] Cache MISS (all entries expired) for 'fast-expire.com' (Type: A)
+[2026-10-05 14:57:58.088] [DEBUG] [main] Cache PUT: [google.com A -> 142.250.190.46] (TTL: 300s)
+[2026-10-05 14:57:58.088] [INFO ] [main] Cache HIT for 'google.com' (Type: A) -> 1 record(s) returned
+[2026-10-05 14:57:58.089] [INFO ] [main] Cache HIT for 'google.com' (Type: A) -> 1 record(s) returned
+[2026-10-05 14:57:58.089] [INFO ] [main] Cache HIT for 'google.com' (Type: A) -> 1 record(s) returned
+[2026-10-05 14:57:58.089] [INFO ] [main] Cache MISS for 'missing.com' (Type: A)
+[2026-10-05 14:57:58.251] [INFO ] [main] DnsServer STARTED on UDP port 57884 (Upstream: 1.1.1.1:53)
+[2026-10-05 14:57:58.251] [DEBUG] [main] Cache PUT: [localtest.org A -> 192.168.1.100] (TTL: 300s)
+[2026-10-05 14:57:58.255] [INFO ] [main] Sending UDP query for 'localtest.org' (A) to 127.0.0.1:57884
+[2026-10-05 14:57:58.260] [INFO ] [DnsWorker] DnsServer received query for 'localtest.org' (A) from /127.0.0.1:57885
+[2026-10-05 14:57:58.261] [INFO ] [DnsWorker] Cache HIT for 'localtest.org' (Type: A) -> 1 record(s) returned
+[2026-10-05 14:57:58.261] [INFO ] [DnsWorker] DnsServer responding from CACHE for 'localtest.org' (A)
+[2026-10-05 14:57:58.262] [DEBUG] [main] Cache PUT: [localtest.org A -> 192.168.1.100] (TTL: 300s)
+[2026-10-05 14:57:58.264] [INFO ] [main] DNS query completed via UDP: 'localtest.org' (A) in 6.04 ms -> 1 answer(s) [NOERROR (Success)]
+[2026-10-05 14:57:58.269] [INFO ] [main] DnsServer STOPPED on UDP port 57884
